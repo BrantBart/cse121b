@@ -17,7 +17,7 @@ console.log(`The total is ${theTotal}`);
 function total(...theNumbers) {
   let sum = 0;
   for (let aNumber of theNumbers) {
-    sum += aNumber * 1; // Multiplied by 1 to make it a number from a string.
+    sum += aNumber * 1; // Multiplied by 1 to make it a number from a.
   }
   console.log(sum);
   return sum;
