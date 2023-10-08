@@ -65,7 +65,7 @@ h1, h2 {
 }
 
 h1 {
-border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
 h2 {
@@ -128,6 +128,16 @@ footer {
 
 .block {
     display: block;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 /* ID Selectors */
