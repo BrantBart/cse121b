@@ -5,6 +5,7 @@ const templesElement = document.querySelector("#temples");
 const templeFile =
   "https://byui-cse.github.io/cse121b-ww-course/resources/temples.json";
 let templeList = [];
+const title = document.querySelector("h2");
 
 // added a function to do the date
 function parseDedicatedDate(dateStr) {
@@ -18,6 +19,24 @@ function parseDedicatedDate(dateStr) {
   return new Date(year, month, day);
 }
 
+// function to update Fetch(): display
+function changeTitle(filter) {
+  switch (filter) {
+    case "utah":
+      title.innerHTML = "Fetch(): Utah Temples";
+      break;
+    case "notutah":
+      title.innerHTML = "Fetch(): Non Utah Temples";
+      break;
+    case "older":
+      title.innerHTML = "Fetch(): Older Utah Temples";
+      break;
+    case "all":
+    default:
+      title.innerHTML = "Fetch(): No Filter Temples";
+      break;
+  }
+}
 /* async displayTemples Function */
 
 const displayTemples = (temples) => {
@@ -61,11 +80,13 @@ const sortBy = () => {
       displayTemples(
         templeList.filter((temple) => temple.location.includes("Utah"))
       );
+      changeTitle("utah");
       break;
     case "notutah":
       displayTemples(
         templeList.filter((temple) => !temple.location.includes("Utah"))
       );
+      changeTitle("notutah");
       break;
     case "older":
       displayTemples(
@@ -74,10 +95,12 @@ const sortBy = () => {
             parseDedicatedDate(temple.dedicated) < new Date(1950, 0, 1)
         )
       );
+      changeTitle("older");
       break;
     case "all":
     default:
       displayTemples(templeList);
+      changeTitle("all");
       break;
   }
 };
