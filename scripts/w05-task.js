@@ -11,7 +11,7 @@ const title = document.querySelector("h2");
 function parseDedicatedDate(dateStr) {
   let [year, month, day] = dateStr.split(", ").map((str, index) => {
     if (index === 1) {
-      // month conversion here had to look up how to do this stuff
+      // month conversion here
       return new Date(Date.parse(str + " 1, 2012")).getMonth();
     }
     return parseInt(str, 10);
