@@ -56,7 +56,7 @@ const setUpCheckboxes = () => {
 
 const nationsSection = document.querySelector("#nations");
 const cardSectionElement = document.querySelector("#card-display");
-const aircraftFile = "../project/aircraft.json";
+const aircraftFile = "project/aircraft.json";
 let aircraftList = {};
 // for the checkbox events
 let countryCheckboxes, theaterCheckboxes;
