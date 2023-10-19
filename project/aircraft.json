@@ -1,0 +1,184 @@
+{
+  "aircraft": [
+    {
+      "designation": "P-51",
+      "name": "Mustang",
+      "type": "Fighter",
+      "countryOfOrigin": "United States",
+      "enteredService": "1942",
+      "endOfService": "1957",
+      "theaters": ["European", "North African", "Pacific"]
+    },
+    {
+      "designation": "P-38",
+      "name": "Lockheed P-38 Lightning",
+      "type": "Fighter",
+      "countryOfOrigin": "United States",
+      "enteredService": "1941",
+      "endOfService": "1949",
+      "theaters": ["European", "Pacific"]
+    },
+    {
+      "designation": "Ju 87",
+      "name": "Junkers Ju 87 Stuka",
+      "type": "Attacker",
+      "countryOfOrigin": "Germany",
+      "enteredService": "1937",
+      "endOfService": "1945",
+      "theaters": ["European", "North African"]
+    },
+    {
+      "designation": "Il-2",
+      "name": "Ilyushin Il-2 Sturmovik",
+      "type": "Attacker",
+      "countryOfOrigin": "Soviet Union",
+      "enteredService": "1941",
+      "endOfService": "1954",
+      "theaters": ["European"]
+    },
+    {
+      "designation": "B-25",
+      "name": "North American B-25 Mitchell",
+      "type": "Bomber",
+      "countryOfOrigin": "United States",
+      "enteredService": "1941",
+      "endOfService": "1960",
+      "theaters": ["European", "Pacific", "North African"]
+    },
+    {
+      "designation": "B-17",
+      "name": "Boeing B-17 Flying Fortress",
+      "type": "Heavy Bomber",
+      "countryOfOrigin": "United States",
+      "enteredService": "1938",
+      "endOfService": "1968",
+      "theaters": ["European", "Pacific"]
+    },
+    {
+      "designation": "Spitfire",
+      "name": "Supermarine Spitfire",
+      "type": "Fighter",
+      "countryOfOrigin": "United Kingdom",
+      "enteredService": "1938",
+      "endOfService": "1961",
+      "theaters": ["European", "North African"]
+    },
+    {
+      "designation": "Fw 190",
+      "name": "Focke-Wulf Fw 190",
+      "type": "Fighter",
+      "countryOfOrigin": "Germany",
+      "enteredService": "1941",
+      "endOfService": "1949",
+      "theaters": ["European"]
+    },
+    {
+      "designation": "Zero",
+      "name": "Mitsubishi A6M Zero",
+      "type": "Fighter",
+      "countryOfOrigin": "Japan",
+      "enteredService": "1940",
+      "endOfService": "1945",
+      "theaters": ["Pacific"]
+    },
+    {
+      "designation": "Hurricane",
+      "name": "Hawker Hurricane",
+      "type": "Fighter",
+      "countryOfOrigin": "United Kingdom",
+      "enteredService": "1937",
+      "endOfService": "1944",
+      "theaters": ["European", "North African"]
+    },
+    {
+      "designation": "Bf 109",
+      "name": "Messerschmitt Bf 109",
+      "type": "Fighter",
+      "countryOfOrigin": "Germany",
+      "enteredService": "1937",
+      "endOfService": "1965",
+      "theaters": ["European", "North African"]
+    },
+    {
+      "designation": "Pe-2",
+      "name": "Petlyakov Pe-2",
+      "type": "Bomber",
+      "countryOfOrigin": "Soviet Union",
+      "enteredService": "1941",
+      "endOfService": "1949",
+      "theaters": ["European"]
+    },
+    {
+      "designation": "D3A",
+      "name": "Aichi D3A",
+      "type": "Bomber",
+      "countryOfOrigin": "Japan",
+      "enteredService": "1940",
+      "endOfService": "1945",
+      "theaters": ["Pacific"]
+    },
+    {
+      "designation": "B-29",
+      "name": "Boeing B-29 Superfortress",
+      "type": "Heavy Bomber",
+      "countryOfOrigin": "United States",
+      "enteredService": "1944",
+      "endOfService": "1960",
+      "theaters": ["Pacific"]
+    },
+    {
+      "designation": "Lancaster",
+      "name": "Avro Lancaster",
+      "type": "Heavy Bomber",
+      "countryOfOrigin": "United Kingdom",
+      "enteredService": "1942",
+      "endOfService": "1963",
+      "theaters": ["European"]
+    },
+    {
+      "designation": "Do 335",
+      "name": "Dornier Do 335 Pfeil",
+      "type": "Fighter",
+      "countryOfOrigin": "Germany",
+      "enteredService": "1944",
+      "endOfService": "1945",
+      "theaters": ["European"]
+    },
+    {
+      "designation": "Tempest",
+      "name": "Hawker Tempest",
+      "type": "Fighter",
+      "countryOfOrigin": "United Kingdom",
+      "enteredService": "1944",
+      "endOfService": "1951",
+      "theaters": ["European"]
+    },
+    {
+      "designation": "Mosquito",
+      "name": "de Havilland Mosquito",
+      "type": "Bomber",
+      "countryOfOrigin": "United Kingdom",
+      "enteredService": "1941",
+      "endOfService": "1963",
+      "theaters": ["European"]
+    },
+    {
+      "designation": "He 111",
+      "name": "Heinkel He 111",
+      "type": "Bomber",
+      "countryOfOrigin": "Germany",
+      "enteredService": "1936",
+      "endOfService": "1966",
+      "theaters": ["European", "North African"]
+    },
+    {
+      "designation": "TBF Avenger",
+      "name": "Grumman TBF Avenger",
+      "type": "Bomber",
+      "countryOfOrigin": "United States",
+      "enteredService": "1942",
+      "endOfService": "1960",
+      "theaters": ["Pacific"]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+#project {
+    background-color: #444654;
+    padding: 100px;
+    width: 100vw;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+#sorter-section {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    background-color: tan;
+}
+
+#sorter-section .section {
+    border: solid 1px black;
+    padding: 10px;
+}
+
+#card-display {
+    display: grid;
+    border: solid red 1px;
+    grid-template-columns: auto auto auto;
+}
+
+.card {
+    position: relative;
+    background-color: gray;
+    border: solid 1px black;
+    min-height: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.aircraft-img {
+    display: block;
+    height: 100px;
+    margin: auto;
+}
+
+.dates {
+    display: block;
+    text-align: center;
+}
+
+.flag {
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.image {
+    background-color: black;
+}
+
+h2 {
+    color: lightgray;
+}

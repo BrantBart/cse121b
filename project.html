@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE 121b | Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="project/project.css">
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="w01-task.html">W1 Task</a></li>
+      <li><a href="w03-task.html">W3 Task</a></li>
+      <li><a href="w04-task.html">W4 Task</a></li>
+      <li><a href="w05-task.html">W5 Task</a></li>
+      <li><a href="project.html" class="active">Project</a></li>
+    </ul>
+  </nav>
+  <div id="project">
+    <div>
+        <h2>This project currently has only <span id="count"></span> aircraft, but more can be added. Everything besides the images is dynamic.</h2>
+    </div>
+    <div id="sorter-section">
+        <div class="slidecontainer section">
+            <input type="range" min="0" max="" value="0" class="slider" id="myRange">
+            <p>Year: <span id="demo"></span></p>
+            <input type="checkbox" id="allYearsCheckbox" checked> All Years
+          </div>
+        <div class="section" id="nations">
+            <p>Nation</p>
+        </div>
+        <div class="section" id="theaters">
+            <p>Theater</p>
+        </div>
+    </div>
+    <div id="card-display">
+      </div>
+  </div>
+  <footer>
+    &copy;<span id="year"></span> | Final Project | CSE 121b
+  </footer>
+  <script src="scripts/main.js"></script>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+  <script src="scripts/project.js"></script>
+</body>
+
+</html>
