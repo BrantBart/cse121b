@@ -1,41 +1,19 @@
 //aircraft will be displayed depending on the settings at the top from the json data
 
+//imports
+import {
+  getEarliestServiceDate,
+  getLatestServiceDate,
+  getUniqueCountriesOfOrigin,
+  getUniqueTheaters,
+} from "./features.js";
+
 // year range setup
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
 output.innerHTML = slider.value;
 slider.oninput = function () {
   output.innerHTML = this.value;
-};
-
-// get earliest date
-const getEarliestServiceDate = (aircraftList) => {
-  const serviceDates = aircraftList.map((plane) =>
-    parseInt(plane.enteredService)
-  );
-  return Math.min(...serviceDates);
-};
-
-// get latest date
-const getLatestServiceDate = (aircraftList) => {
-  const serviceDates = aircraftList.map((plane) =>
-    parseInt(plane.endOfService)
-  );
-  return Math.max(...serviceDates);
-};
-
-//get unique countries of origin from list
-const getUniqueCountriesOfOrigin = (aircraftList) => {
-  const countries = aircraftList.map((plane) => plane.countryOfOrigin);
-
-  const uniqueCountries = [...new Set(countries)];
-  return uniqueCountries;
-};
-
-//unique theatres
-const getUniqueTheaters = (aircraftList) => {
-  const theaters = aircraftList.flatMap((plane) => plane.theaters);
-  return [...new Set(theaters)];
 };
 
 //setting up the checkboxes from the functions that created them... :*( this was out of order and broke
@@ -201,7 +179,7 @@ const getAircraft = async () => {
   //   make the page display how many aircraft are in the data total
   //   console.log(aircraftList.aircraft.length);
   let countFill = document.querySelector("#count");
-  countFill.textContent = aircraftList.aircraft.length;
+  countFill.textContent = `${aircraftList.aircraft.length}`;
   setUpCheckboxes();
   //   console.log(year);
 };
